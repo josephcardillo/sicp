@@ -49,3 +49,9 @@
       ((= b 4) (+ 6 7 a))
       (else 25)))
 ; ANSWER: 16
+
+(print
+(+ 2 (if (> b a) b a)))
+; 2 + (if b is greater than a, return b, else return a.)
+; b is greater than a (4 > 3), so 2 + 4 = 6
+; ANSWER: 6
