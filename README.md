@@ -13,11 +13,5 @@ I'm reading through the paperback version of this book, rather than the
 only because I learn better this way. (And because I stare at a
 computer screen all day anyway. So why not break it up a little, ya know?)
 
-The purpose of this repository is to work through the exercises using CLISP
-[Common Lisp](https://clisp.sourceforge.io/).
-
-### Resources:
-
-**Installing CLISP and helpful tools & commands:**
-
-* [Derek Banas video tutorial](https://youtu.be/ymSq4wHrqyU)
+The purpose of this repository is to work through the exercises using
+[MIT/GNU Scheme](https://www.gnu.org/software/mit-scheme/)
