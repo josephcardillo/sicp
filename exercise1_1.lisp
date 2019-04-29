@@ -37,3 +37,15 @@
 (= a b))
 ; false
 
+(print
+(if (and (> b a) (< b (* a b)))
+    b
+    a))
+; if b is greater than a AND b is less than the product of a and b, then return b. else return a.
+; ANSWER: 4
+
+(print
+(cond ((= a 4) 6)
+      ((= b 4) (+ 6 7 a))
+      (else 25)))
+; ANSWER: 16
