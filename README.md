@@ -18,6 +18,6 @@ The purpose of this repository is to work through the exercises using CLISP
 
 ### Resources:
 
-**Installing CLISP and helpful tools & commands**
+**Installing CLISP and helpful tools & commands:**
 
 * [Derek Banas video tutorial](https://youtu.be/ymSq4wHrqyU)
