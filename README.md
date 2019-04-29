@@ -14,4 +14,4 @@ only because I learn better this way. (And because I stare at a
 computer screen all day anyway. So why not break it up a little, ya know?)
 
 The purpose of this repository is to work through the exercises using
-[MIT/GNU Scheme](https://www.gnu.org/software/mit-scheme/)
+[MIT/GNU Scheme](https://www.gnu.org/software/mit-scheme/).
