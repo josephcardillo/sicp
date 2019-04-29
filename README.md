@@ -8,18 +8,16 @@ computer science and programming, though, the more I find my skillset full of ho
 Therefore, in an effort to fill in these gaps, I'm studying _Structure and Interpretation
 of Computer Programs_.
 
-I'm reading through the paperback version of this book, rather than the online
-version, only because I learn better this way (and because I stare at a
-computer screen all day anyway. So why not break it up a little?)
+I'm reading through the paperback version of this book, rather than the (online
+version)[https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book.html], 
+only because I learn better this way. (And because I stare at a
+computer screen all day anyway. So why not break it up a little, ya know?)
 
-The purpose of this repository is to work through the exercises using Clisp.
+The purpose of this repository is to work through the exercises using CLISP
+(Common Lisp)[https://clisp.sourceforge.io/].
 
 ### Resources:
 
-**Installing clisp and helpful tools/commands (Derek Banas video tutorial):**
+**Installing CLISP and helpful tools & commands**
 
-* https://youtu.be/ymSq4wHrqyU
-
-**Git basic commands:**
-
-* https://www.hostinger.com/tutorials/basic-git-commands
+* (Derek Banas video tutorial)[https://youtu.be/ymSq4wHrqyU]
