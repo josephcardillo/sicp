@@ -61,4 +61,3 @@ Therefore this evaluates to:
 (* 4 4)
 ||#
 ; VALUE: 16
-
