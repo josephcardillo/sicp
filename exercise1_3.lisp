@@ -13,12 +13,21 @@ returns the sum of the squares of the two larger numbers. ||#
     
 (define (smaller-num x y)
     (if (< x y) x y))
-    
+ 
+  
 (define (square-two-larger x y z)
-(sum-of-squares (larger-num x y)
-    (smaller-num
-    (larger-num x z) (larger-num y z))))
-
+    (sum-of-squares (larger-num x y)
+        (smaller-num
+        (larger-num x z) (larger-num y z))))
+        
+;;; OR
+  
+(define (square-two-larger x y z)
+    (sum-of-squares 
+        (smaller-num (larger-num x y) (larger-num y z))
+        (larger-num x z)))
+    
+    
 ;;; Tests
 
 (square-two-larger 1 2 3)
