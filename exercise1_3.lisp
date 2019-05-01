@@ -1,4 +1,4 @@
-;;;; Exercise 1.3 (in progress)
+;;;; Exercise 1.3
 
 #|| Define a procedure that takes three numbers as arguments and 
 returns the sum of the squares of the two larger numbers. ||#
@@ -9,10 +9,15 @@ returns the sum of the squares of the two larger numbers. ||#
     (+ (square x) (square y)))
 
 (define (larger-num x y)
-    (if (>= x y) x y))
+    (if (> x y) x y))
+    
+(define (smaller-num x y)
+    (if (< x y) x y))
     
 (define (square-two-larger x y z)
-(sum-of-squares (larger-num x y) (larger-num y z)))
+(sum-of-squares (larger-num x y)
+    (smaller-num
+    (larger-num x z) (larger-num y z))))
 
 ;;; Tests
 
@@ -31,10 +36,12 @@ returns the sum of the squares of the two larger numbers. ||#
 (square-two-larger 3 2 3)
 ;VALUE: 18
 
+(square-two-larger 3 4 3)
+;VALUE: 25
+
 (square-two-larger 5 2 3)
 ;VALUE: 34
 
 (square-two-larger 1 5 2)
-;THIS FAILS
-
+;VALUE: 29
 
