@@ -35,7 +35,6 @@ showing how the test fails for small and large numbers. ||#
 (sqrt 4)
 ;Value: 2.0000000929222947
 
-
 #|| sqrt of a very large number ||#
 
 (sqrt 34969578659483338485669786657445586943457688)
@@ -49,7 +48,6 @@ showing how the test fails for small and large numbers. ||#
 #|| In other words, this would look like:
 34969578659483340000000000000000000000000000
 Which is a much different (smaller) number than the original. ||#
-
 
 #|| sqrt of a very small number ||#
 
@@ -65,7 +63,7 @@ This makes our test inadequate for very large numbers." ||#
 
 #|| An alternative strategy for implementing good-enough? is to
 watch how guess changes from one iteration to the next and to
-stop when the change is a very small graction of the guess. 
+stop when the change is a very small fraction of the guess. 
 
 Design a square-root procedure that uses this kind of end test.
 Does this work better for small and large numbers? ||#
