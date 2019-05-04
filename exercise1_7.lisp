@@ -45,7 +45,17 @@ very small number, I get the following results ||#
 
 (sqrt 34969578659483338485669786657445586943457688)
 ;Value: 5.913508151637515e21
-;Value: 5.91354155764574e21
+
+#|| When I square the value, I get the following ||#
+(square 5.913508151637515e21)
+;Value: 3.496957865948334e43
+
+# || In other words, this would look like:
+ 34969578659483340000000000000000000000000000
+Which is a much different (smaller) number than the original number I
+took the sqrt of. I guess this is why they're saying "This makes
+our test inadequate for very large numbers." ||#
+
 
 (sqrt 0.000000000000004706970669767955584485)
 ;Value: .03125000000005016
