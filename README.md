@@ -13,5 +13,17 @@ I'm reading through the paperback version of this book, rather than the
 only because I learn better this way. (And because I stare at a
 computer screen all day anyway. So why not break it up a little, ya know?)
 
-The purpose of this repository is to work through the exercises using
-[MIT/GNU Scheme](https://www.gnu.org/software/mit-scheme/).
+The purpose of this repository is to work through the exercises using either:
+
+* [MIT/GNU Scheme](https://www.gnu.org/software/mit-scheme/)
+* [DrRacket](https://racket-lang.org/)
+
+If using Racket, to get Scheme to behave like it did at the time the book was
+written, do:
+
+File > Package Manager > Select "Do What I Mean", then search "sicp" in the 
+Package Source field. Let it install. 
+
+Then at te top of your Racket terminal screen, just add:
+
+#lang sicp
