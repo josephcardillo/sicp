@@ -24,6 +24,6 @@ written, do:
 File > Package Manager > Select "Do What I Mean", then search "sicp" in the 
 Package Source field. Let it install. 
 
-Then at te top of your Racket terminal screen, just add:
+Then at the top of your Racket terminal screen, just add:
 
 #lang sicp
