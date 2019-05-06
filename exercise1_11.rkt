@@ -56,8 +56,23 @@ examples regarding the factorial function, sequence of Fibonacci numbers and the
 Counting Change example to get my bearings on the differences between recursive
 and iterative processes.
 
-It stood out that there were three functions being computed when (<= n 3). Which
-seemed to suggest 
+It stood out that there were three functions being computed when (<= n 3). I wrote
+out the following sequence when computing (f 3) through (f 8):
+
+         A    B    C  Total
+(f 3)    2    2    0      4
+(f 4)    4    4    3     11
+(f 5)   11    8    6     25
+(f 6)   25   22   12     59
+(f 7)   59   50   33    142
+(f 8)  142  118   75    335
+
+I was specifically trying to find a pattern as the count increased, and eventually
+saw that the next iteration was 
+
+A <-- A + B + C
+B <-- A + A
+C <-- (B * 2) - B/2
 
 ||#
 
