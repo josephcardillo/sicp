@@ -2,8 +2,10 @@
 
 ;;;; Exercise 1.13 (In Progress)
 
-#||
-(define (square x) (* x x))
+;;; Square root function.
+
+(define (sqrt x)
+    (sqrt-iter 1.0 x))
 
 (define (sqrt-iter guess x)
     (if (good-enough? guess x)
@@ -20,19 +22,25 @@
 (define (good-enough? guess x)
     (< (abs (- (square guess) x)) 0.001))
 
-(define (sqrt x)
-    (sqrt-iter 1.0 x))
-||#
+;;; Square function.
 
+(define (square x) (* x x))
 
-(define (factorial n)
-  (if (= n 1)
-      1
-      (* n (factorial (- n 1)))))
+;;; Linear iterative process for finding Fibonacci numbers.
+
+(define (fib n)
+  (fib-iter 1 0 n))
+
+(define (fib-iter a b count)
+  (if (= count 0) b
+      (fib-iter (+ a b) a (- count 1))))
+                  
          
 (define phi1 (/ (+ 1 (sqrt 5)) 2))
 
 (define phi2 (/ (- 1 (sqrt 5)) 2))
+
+;;; Function to take any number to any power.
 
 (define (nth x n)
   (nth-iter x x n))
@@ -41,12 +49,46 @@
   (cond ((= count 1) y)
         ((> count 1)
          (nth-iter x (* y x) (- count 1)))
+        ((= count -1) (/ 1 y))
+        ((< count -1)
+         (nth-iter x (* y x) (+ count 1)))
         (else 0)))
-        
+
+;;; Prove that Fib(n) is the closest integer to phi1^n / (sqrt 5)
+
+(fib 1)
+(/ (nth phi1 1) (sqrt 5))
+
+; 1
+; 0.7236067059356593
+
+(fib 2)
+(/ (nth phi1 2) (sqrt 5))
+
+; 1
+; 1.1708205768786706
+
+(fib 3)
+(/ (nth phi1 3) (sqrt 5))
+
+; 2
+; 1.8944280256081427
+
+(fib 4)
+(/ (nth phi1 4) (sqrt 5))
+
+; 3
+; 3.06524980435279
+
+(fib 3)
+(/ (- (nth phi1 3) (nth phi2 3)) (sqrt 5))
+
+; 2
+; 2.0000010265159327
 
 
-(nth 2 2)
-(nth 2 3)
+
+
 
         
 
