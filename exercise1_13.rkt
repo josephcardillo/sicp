@@ -34,13 +34,14 @@
 (define (fib-iter a b count)
   (if (= count 0) b
       (fib-iter (+ a b) a (- count 1))))
-                  
+
+;;; Define phi1 and phi2 since I don't have greek symbols at my fingertips.
          
 (define phi1 (/ (+ 1 (sqrt 5)) 2))
 
 (define phi2 (/ (- 1 (sqrt 5)) 2))
 
-;;; Function to take any number to any power.
+;;; Define a function to take any number to any power so that I can use it to prove the next section.
 
 (define (nth x n)
   (nth-iter x x n))
